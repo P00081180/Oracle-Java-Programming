@@ -7,16 +7,19 @@ import javax.swing.border.*;
  
 public class JavaBank extends JFrame {
  
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	// Make these variables publicly available
+
+    private static final long serialVersionUID = 1L;
+    // Make these variables publicly available
     public String Name;
     public int Accountnum;
     public int Balance;
-
+    // Create a new object based on the immutable color class
+    CompanyColor companyColor = new CompanyColor();
+    // Create a new Color Object and set the RGB values based on the immutable class
+    private Color myColor = new
+            Color(companyColor.getR(), companyColor.getG(), companyColor.getB());
     
+
     // JPanel for user inputs
     private JPanel inputDetailJPanel;
  
@@ -87,7 +90,8 @@ public class JavaBank extends JFrame {
     private void createUserInterface() {
         // get content pane for attaching GUI components
         Container contentPane = getContentPane();
- 
+        contentPane.setBackground(myColor);
+        
         // enable explicit positioning of GUI components
         contentPane.setLayout(null);
  
@@ -96,6 +100,9 @@ public class JavaBank extends JFrame {
         inputDetailJPanel.setBounds(16, 16, 208, 250);
         inputDetailJPanel.setBorder(new TitledBorder("Input Details"));
         inputDetailJPanel.setLayout(null);
+        
+        inputDetailJPanel.setBackground(myColor);
+        
         contentPane.add(inputDetailJPanel);
  
         // set up NameJLabel
@@ -421,4 +428,4 @@ public class JavaBank extends JFrame {
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
  
-}
+} // end class JavaBank
