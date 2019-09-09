@@ -3,14 +3,9 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>JP_Slides_1_1</name>
+            <name>JP_Slides_4_3</name>
             <source-roots>
                 <root id="src.dir"/>
-                <root id="src2.dir" name="animalshop\src"/>
-                <root id="src3.dir" name="uniquenums\src"/>
-                <root id="src4.dir" name="valuechecker\src"/>
-                <root id="src5.dir" name="agechecker\src"/>
-                <root id="src6.dir" name="inputvariables\src"/>
             </source-roots>
             <test-roots/>
         </data>
